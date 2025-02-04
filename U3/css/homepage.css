@@ -1,0 +1,35 @@
+body {
+    background-image: url(../images_using/front_page.jpg);
+    background-size: cover;
+    background-position: center;
+    color: white;
+}
+
+header {
+    height: 93vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+h1 {
+    font-size: 60px;
+}
+
+nav {
+    background-color: var(--colorLowOpacity);
+}
+
+footer {
+    position: fixed;
+    left: 50%;
+    bottom: 20px;
+    transform: translate(-50%, -50%);
+}
+
+@media (max-width:850px) {
+    nav {
+        background-color: var(--color);
+    }
+}

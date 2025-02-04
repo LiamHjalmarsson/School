@@ -1,0 +1,76 @@
+[
+    {
+        "id": 2,
+        "band": "five finger death punch",
+        "album": "f8",
+        "songs": [
+            "f8"
+        ],
+        "genre": "hard rock",
+        "year": "2021",
+        "src": "uploades\/1668187063-71G2hRDPg6L.jpg"
+    },
+    {
+        "id": 3,
+        "band": "fall out boy",
+        "album": "save rock and roll",
+        "songs": [],
+        "genre": "punk",
+        "year": "2012",
+        "src": "uploades\/1668187084-Is-Fall-Out-Boy-rock-and-roll-iphonforum.jpg"
+    },
+    {
+        "id": 4,
+        "band": "kwabs, fetty wap",
+        "album": "walk",
+        "songs": [
+            "walk"
+        ],
+        "genre": "rap",
+        "year": "2015",
+        "src": "uploades\/1668187152-8f146b1922b24960d4e510054d8f7e29.1000x1000x1.jpg"
+    },
+    {
+        "id": 5,
+        "band": "for king & country",
+        "album": "burn the ships",
+        "songs": [
+            "burn the ships"
+        ],
+        "genre": "perfect",
+        "year": "2018",
+        "src": "uploades\/1668203273-forKingcountry.jpg"
+    },
+    {
+        "id": 6,
+        "band": "green day",
+        "album": "american idiot",
+        "songs": [
+            "Holiday",
+            "american idiot"
+        ],
+        "genre": "rock",
+        "year": "2008",
+        "src": "uploades\/1668271359-ab67616d0000b27308a1b1e0674086d3f1995e1b.jpg"
+    },
+    {
+        "id": 7,
+        "band": "ss",
+        "album": "ss",
+        "songs": [],
+        "genre": "",
+        "year": "",
+        "src": ""
+    },
+    {
+        "id": 9,
+        "band": "linkin park",
+        "album": "one more light",
+        "songs": [
+            "talking to myself"
+        ],
+        "genre": "punk \/ rock",
+        "year": "2017",
+        "src": "uploades\/1668502384-linkin_park.jpg"
+    }
+]
