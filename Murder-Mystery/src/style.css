@@ -1,0 +1,118 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-size: var(--fontSizeText);
+    font-family: var(--fontText);
+    color: var(--lightGray);
+}
+
+body {
+    background-color: var(--Darkbackground);
+}
+
+/* Buttons */
+button {
+    position: relative;
+    color: var(--Text);
+    outline: none;
+    background: none;
+    border: 0.15rem solid var(--darkBrown);
+    border-radius: var(--btnRadius);
+    cursor: pointer;
+    width: 100%;
+    box-shadow: -4px 14px 25px -10px rgba(0,0,0,0.20);
+    padding: 0.8rem;
+    transition: border-color 0.4s ease-in-out;
+}
+
+button:hover {
+    border-color: var(--lightYellow);
+}
+
+button.active {
+    background: var(--lightYellow);
+    border-color: var(--lightHover);
+    transition: background 0.4s ease-in-out, color 0.4s ease-in-out;
+}
+
+button.active:hover {
+    background: var(--lightYellow);
+    color: var(--Darkbackground);
+}
+
+/* Inputs */
+input:hover {
+    border-color: var(--lightYellow);
+}
+
+input:focus {
+    border-color: var(--lightYellow);
+}
+
+
+/*  CSS FOR THE  */
+.navContainer {
+    /* height: 75px; */
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    height: 60px;
+    align-items: center;
+    position: relative;
+}
+
+.navClose {
+    width: 40%;
+    display: flex;
+    justify-content: flex-start;
+    position: absolute;
+    left: 0;
+}
+
+.close {
+    height: 30px;
+    width: 30px;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    margin-left: 15px;
+}
+
+.fa-xmark, .fa-arrow-right, .fa-solid fa-suitcase, .fa-solid, fa-person-walking {
+    color: var(--darkBrown);
+    font-size: 35px;
+}
+
+.fa-right-from-bracket {
+    color: var(--lightBrown);
+}
+
+.headerPopUp {
+    flex-grow: 1;
+    text-align: center;
+}
+
+.containerPopUP { 
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 3;
+    width: 100vw;
+    background-color: var(--lightBrown);
+    font-style: var(--fontText);
+    opacity: 0;
+    transition: opacity 0.5s;
+    overflow: scroll;
+}
+
+/* fade in out  */
+#wrapperPopUp.fade-in, .containerPopUP.fade-in, #riddleContainer.fade-in,
+#containerDialog.fade-in, #nextPart.fade-in{
+    opacity:1;
+}
+
+#wrapperPopUp.fade-out, .containerPopUP.fade-out, #riddleContainer.fade-out,
+#containerDialog.fade-out, #nextPart.fade-out{
+    opacity:0;
+}

@@ -1,0 +1,58 @@
+#containerBag {
+    background-color: var(--lightBrown);
+}
+
+#bagNav {
+    display: flex;
+    justify-content: center;
+    height: 100px;
+    align-items: center;
+}
+
+.bagClose {
+    position: absolute;
+    left: 0;
+    padding: 20px;
+}
+
+.bagHeader {
+    flex-grow: 1;
+    text-align: center;
+}
+
+#containerInventory {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 50px;
+}
+
+#inventory {
+    width: 80%;
+    padding: 10px;
+    border-radius: 5px;
+    min-width: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.foundClue, .notFound {
+    height: 200px;
+    width: 70%;
+    padding: 10px;
+    background-color: var(--darkBrown);
+    border: 2px solid var(--darkYellow);
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imgClue {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100%;
+    width: 100%;
+}
