@@ -1,0 +1,138 @@
+
+*{
+    padding: 0px;
+    margin: 0px;
+
+    overflow-y: hidden;
+}
+
+header {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 40%;
+    height: 50px;
+}
+
+button {
+    box-shadow: 0px 1px 0px 0px #1c1b18;
+	background:linear-gradient(to bottom, #eae0c2 5%, #ccc2a6 100%);
+	background-color:#eae0c2;
+	border-radius:15px;
+	border:2px solid #333029;
+	display:inline-block;
+	cursor:pointer;
+	color:#505739;
+	font-size:14px;
+	font-weight:bold;
+	padding:10px 16px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #ffffff;
+}
+
+button:hover {
+    background:linear-gradient(to bottom, #ccc2a6 5%, #eae0c2 100%);
+	background-color:#ccc2a6;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    top: 10%;
+    width: 500px;
+    align-items: center;
+    justify-content: space-around;
+}
+
+button {
+    padding: 5px;
+}
+
+.roll {
+    animation: roll 10s infinite linear;
+}
+
+@keyframes roll {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+
+}
+
+main {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 3px;
+    background-color: rgba(0,0,0);
+    background-image: url(./pictures/Untitled_Artwork.gif);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size:contain;
+}
+
+input[type="radio"] {
+    -webkit-appearance: none;
+    appearance: none;
+    background-color: #fff;
+    box-shadow: inset 1em 1em red;
+    margin: 0;
+    font: inherit;
+    color: currentColor;
+    width: 1em;
+    height: 1em;
+    border: 0.15em solid currentColor;
+    border-radius: 50%;
+}
+
+input[type="checkbox"]
+{
+    -webkit-appearance: none;
+    appearance: none;
+    background-color: #fff;
+    box-shadow: inset 1em 1em rgb(88, 98, 83);
+    margin: 0;
+    font: inherit;
+    color: currentColor;
+    width: 1em;
+    height: 1em;
+    border: 0.15em solid currentColor;
+    border-radius: 50%;
+}
+
+input[type="checkbox"]:checked {
+    -webkit-appearance: none;
+    appearance: none;
+    background-color: #fff;
+    box-shadow: inset 1em 1em rgb(21, 255, 0);
+    margin: 0;
+    font: inherit;
+    color: currentColor;
+    width: 1em;
+    height: 1em;
+    border: 0.15em solid currentColor;
+    border-radius: 50%;
+}
+
+input[type="checkbox"]:checked:first-child {
+    box-shadow: inset 1em 1em rgb(215, 223, 215);
+}
+
+.fullScreen {
+    display: flex;
+    justify-content: space-around;
+}
+
+.fullScreenDiv{
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 100%;
+}
