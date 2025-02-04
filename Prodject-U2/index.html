@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>U2</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <img src="./crossfit.jpg" width="300px" height="130px">     
+        <div>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Challanges</a></li>
+                <li><a href="#">WorkOuts</a></li>
+                <li><a href="#">Inspo</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <div id="container">
+
+        <div id="wrapper">
+
+            <div id="header">
+                <!-- <img src="./crossfit.jpg" width="300px" height="100px">     -->
+                <h1>
+                    Submit your favorit and worst exersise!
+                </h1>
+            </div>
+
+            <form id="add-person-to-form">
+
+                <input type="text" id="name" class="style-of-add-person" placeholder="Name:">
+                <input type="number" id="age" class="style-of-add-person person-age" placeholder="Age": min="0">
+                <input type="text" id="gender" class="style-of-add-person person-gender" placeholder="Gender:">
+                <input type="text" id="crossfit-preferd" class="style-of-add-person person-exersice" placeholder="Preferd Exersice:">
+                <input type="text" id="crossfit-worst" class="style-of-add-person person-exersice" placeholder="Worst Exersice:">
+                <button>Add To Database</button>
+
+            </form>
+
+            <div id="color-header">
+
+            </div>
+
+            <div id="filters">
+
+                <form id="filter-by-age">
+                    <input type="number" id="filer-age" class="style-of-filter" placeholder="Age" min="0">
+                    <button class="styling-the-buttons">Filter</button>  
+                </form>
+    
+                <form id="filter-by-gender">
+                    <input type="text" id="filer-gender" class="style-of-filter" placeholder="Gender">
+                    <button class="styling-the-buttons">Filter</button>
+                </form>
+     
+                <form id="filter-by-preferd">
+                    <input type="text" id="filer-preferd" class="style-of-filter" placeholder="Preferd Exersice"> 
+                    <button class="styling-the-buttons">Filter</button>
+                </form>
+
+                <form id="filter-by-worst">
+                    <input type="text" id="filer-worst" class="style-of-filter" placeholder="Worst Exersice"> 
+                    <button class="styling-the-buttons">Filter</button>
+                </form>
+    
+                <button id="show-all">Show All</button>
+
+            </div>  
+
+
+            <div id="headers">
+
+                <div>Name</div>
+                <div>Age</div>
+                <div>Gender</div>
+                <div>Preferd</div>
+                <div>Worst</div>
+                <div class="button-action">Action</div>
+
+            </div>
+            
+    
+            <ol id="persons">
+                
+            </ol>
+
+
+            <div id="info">
+
+                <div>The average age of all people: <span id="addVAlue"></span></div>
+                <div>The average age of all Men: <span id="addMan"></span></div>
+                <div>The average age of all Women: <span id="addWomen"></span></div>
+
+            </div>
+
+        </div>
+
+    </div>
+    
+
+    <script src="database.js"></script>
+    <script src="main.js"></script>
+    
+</body>
+</html>

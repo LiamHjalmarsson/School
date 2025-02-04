@@ -1,0 +1,220 @@
+body {
+    margin: 0px;
+    background-color: #2e2729;
+    /* background: linear-gradient(to right, #2e2729); */
+}
+
+header {
+    width: 100%;
+    height: 140px;
+    background-color: black;
+    margin-bottom: 20px;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+img {
+    margin-left: 100px;
+}
+header > div {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+header > div > ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+header > div > ul > li {
+    flex-grow: 1;
+    flex-basis: 1;
+    list-style: none;
+    text-align: center;
+}
+header > div > ul > li > a {
+    display: block;
+    text-decoration: none;
+    background-color: #2e2729;
+    color: white;
+    padding: 40px;
+}
+
+a:hover {
+    background-color: darkslategrey;
+}
+
+#container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+
+#wrapper {
+    width: 1100px;
+}
+
+#header {
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    border-radius: 10px;
+}
+
+#add-person-to-form {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.style-of-add-person {
+    height: 30px;
+}
+
+.person-age, .person-gender{
+    width: 80px;
+}
+
+.person-exersice {
+    width: 300px;
+}
+
+#color-header{
+    border-radius: 10px;
+    height: 150px;
+    font-size: 35px;
+    font-weight: bold;
+    color: white;
+    background-color: rgb(5, 36, 36);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#filters {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    margin-top: 10px;
+    margin-bottom: 20px;
+    gap: 15px;
+}
+
+.style-of-filter {
+    height: 30px;
+}
+
+#headers {
+    font-size: 18px;
+    font-weight: bold;
+    padding: 25px;
+    border-bottom: 3px solid darkslategrey;
+    background: lightgray;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    grid-template-columns:repeat(6, 1fr);
+  }
+
+.button-action {
+    text-align: center;
+}
+
+.button-action-remove {
+    border-radius: 5px;
+    width: 120px;
+    height: 25px;
+    margin: 0px auto;
+}
+
+.styling-the-buttons,  #show-all {
+    border-radius: 5px;
+    height: 35px;
+}
+
+.button-action-remove:hover, .styling-the-buttons:hover, #show-all:hover {
+    border-radius: 5px;
+    border: 0px;
+    color: white;
+    background-color: rgb(1, 95, 64);
+}
+
+#persons {
+    background: lightgray;
+    padding: 10px;
+}
+
+.person {
+    padding: 25px;
+    background: lightgray;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    grid-template-columns:repeat(6, 1fr);
+  }
+  
+.person div {
+    display: flex;
+    align-items: center;
+  }
+  
+.person:nth-child(odd) {
+    background: rgb(5, 36, 36); 
+    color: lightgray; 
+}
+
+#info {
+    font-size: 20px;
+    font-weight: bold;
+    padding: 20px;
+    border-bottom: 3px solid darkslategrey;
+    background: lightgray;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+@media (max-width:1100px) {
+    #wrapper {
+        max-width: 800px;
+    }
+
+    #add-person-to-form {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+
+    }
+
+    .person-age {
+        width: 300px;
+    }
+
+    .person-gender{
+        width: 160px;
+    }
+
+    #filters {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+    }
+
+    .style-of-filter {
+        width: 180px;
+    }
+
+    .styling-the-buttons {
+        width: 60px;
+    }
+
+}
