@@ -1,0 +1,260 @@
+nav {
+  position: fixed;
+  width: 100vw;
+  z-index: 1;
+  top: 0;
+  transition: 0.5s;
+}
+
+.navContainer {
+  display: flex;
+  align-items: center;
+  background-image: linear-gradient(
+    to bottom,
+    rgb(15, 15, 15),
+    rgba(15, 15, 15, 0)
+  );
+  transition: color 1s;
+  font-family: Nunito Sans, sans-serif;
+  font-weight: bolder;
+  padding: 0px 10px;
+}
+
+.hide-nav {
+  top: -80px;
+}
+
+.burger-div {
+  width: 40%;
+}
+
+.burger-div > .material-symbols-outlined {
+  position: relative;
+  left: 5px;
+}
+
+.navContainer > div:nth-child(2) {
+  width: 100%;
+  text-align: center;
+  font-size: 18pt;
+  color: white;
+}
+
+.notification-icon {
+  width: 20%;
+}
+
+.profile-div {
+  min-width: 33px;
+  min-height: 33px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.userImg {
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  border-radius: 50%;
+  height: 24px;
+  position: relative;
+  bottom: 4px;
+  margin-left: 5px;
+}
+
+.notiUserImg {
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  border-radius: 50%;
+  height: 24px;
+}
+.burgerMenu {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  font-size: 16pt;
+  right: 0px;
+  top: 0px;
+  transition: 0.5s;
+  z-index: 2;
+  background-color: rgb(15, 15, 15);
+  font-family: 'Nunito Sans', sans-serif;
+  overflow: scroll;
+  scrollbar-width: none;
+}
+
+.burgerMenu > div {
+  height: 17vw;
+  display: flex;
+  align-items: center;
+  padding-left: 25px;
+}
+
+.burger-item-start {
+  position: relative;
+  left: -100px;
+  top: -100px;
+}
+
+.burger-item-end {
+  position: relative;
+  left: 0;
+  top: 0;
+  transition: 0.5s;
+}
+
+.burgerMenu > div:hover {
+  cursor: pointer;
+}
+
+.burgerMenu > div > p:hover {
+  color: #4e4e4e;
+}
+
+.burgerMenu > div:first-child {
+  padding-top: 20px;
+  padding-left: 20px;
+}
+
+.burgerMenu > div:last-child {
+  padding-top: 40px;
+}
+
+.burgerMenu > div:last-child > .material-symbols-outlined {
+  font-size: 30px;
+}
+
+.burgerMenu > div:first-child > .material-symbols-outlined {
+  font-size: 30px;
+}
+
+.hideBurger {
+  position: fixed;
+  right: 100vw;
+}
+
+.burger-div > .material-symbols-outlined {
+  font-size: 30px;
+  color: white;
+}
+
+.burger-div > .material-symbols-outlined:hover {
+  cursor: pointer;
+}
+
+.notification-icon > .material-symbols-outlined {
+  font-size: 32px;
+  color: white;
+  position: relative;
+  left: 10px;
+}
+
+.notification-icon > .material-symbols-outlined:hover {
+  cursor: pointer;
+}
+
+.profile-div > .material-symbols-outlined {
+  font-size: 34px;
+  color: white;
+  position: relative;
+  bottom: 3px;
+}
+
+.profile-div > .material-symbols-outlined:hover {
+  cursor: pointer;
+}
+
+.notification-box {
+  color: white;
+  padding: 15px;
+  background-color: black;
+  max-height: 40vh;
+  overflow: scroll;
+  transition: 1s;
+  position: fixed;
+  scrollbar-width: 0;
+  top: 0;
+  padding-top: 90px;
+  z-index: -1;
+  width: 100%;
+  font-family: Nunito Sans, sans-serif;
+}
+
+.unseen-notification-box,
+.seen-notification-box {
+  min-height: 80px;
+}
+
+.unseen-notification-box > div:first-child {
+  font-size: 14pt;
+  margin-bottom: 16px;
+  margin-left: 7px;
+}
+
+.seen-notification-box > div:first-child {
+  font-size: 14pt;
+  margin-bottom: 16px;
+  margin-left: 7px;
+}
+
+.notification-item {
+  border-radius: 2px;
+  margin-bottom: 5px;
+  display: flex;
+  align-items: center;
+  font-size: 10pt;
+  width: 85%;
+  background-color: #1f1e1e84;
+  padding: 10px;
+}
+
+.notification-item > img {
+  width: 35px;
+  margin-left: 10px;
+}
+
+.notification-item > div:first-child {
+  border-radius: 50%;
+  margin-right: 10px;
+  height: 40px;
+  min-width: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #1f1e1e84;
+  border: 0.5px solid rgb(48, 46, 46);
+}
+.notification-item > div:first-child > .material-symbols-outlined {
+  color: rgb(145, 145, 145);
+  font-size: 30px;
+  margin-bottom: 2px;
+}
+
+.notification-item > div:nth-child(2) > div:nth-child(1) {
+  margin-bottom: 3px;
+  margin-left: 3px;
+}
+
+.notification-item > div:nth-child(2) > div:nth-child(2) {
+  font-size: 9pt;
+  margin-left: 3px;
+}
+
+.notification-box > div:hover {
+  cursor: pointer;
+}
+
+.hideNotifications {
+  position: fixed;
+  top: -100vh;
+}
+
+.notImg {
+  height: 100%;
+  width: 100%;
+}

@@ -1,0 +1,139 @@
+body {
+  margin: 0;
+}
+
+html {
+  scrollbar-width: none;
+}
+
+main {
+  width: 100vw;
+  background-color: rgb(15, 15, 15);
+  overflow: hidden;
+}
+
+#popularWrapper {
+  display: flex;
+  height: 65vh;
+  flex-direction: row;
+  position: relative;
+}
+
+.movieWrapper {
+  margin: 0px 3px 10px 3px;
+}
+
+.movieDiv {
+  margin-right: 6px;
+}
+
+#personWrapper {
+  padding-left: 5px;
+  background-image: linear-gradient(
+    to top,
+    rgb(15, 15, 15),
+    rgba(13, 13, 13, 0.48)
+  );
+}
+
+.personDiv,
+#addFriendDiv {
+  margin: 0px 7px 0px 7px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.imgDiv {
+  border: 0.5px solid rgb(48, 46, 46);
+  border-radius: 50%;
+  height: 60px;
+  width: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #1f1e1e84;
+}
+
+.nameDiv {
+  text-align: center;
+  font-size: 14px;
+}
+
+.nameDiv > p:first-child {
+  margin-top: 5px;
+}
+
+.nameDiv > p:last-child {
+  position: relative;
+  bottom: 20px;
+}
+
+.personBox {
+  display: flex;
+  overflow-x: scroll;
+}
+
+.movieBox {
+  display: flex;
+  overflow: scroll;
+  margin: 0px 6px;
+}
+
+.titleBox {
+  padding: 10px 0px 5px 11px;
+  font-family: 'Mukta', sans-serif;
+  color: #c3c2c2;
+}
+
+.titleBox:hover {
+  cursor: pointer;
+  color: rgb(153, 153, 153);
+}
+
+.remove {
+  opacity: 1;
+  -webkit-transition: opacity 1000ms linear;
+  transition: opacity 1000ms linear;
+}
+
+.movieDiv {
+  height: 190px;
+  min-width: 120px;
+  margin: 5px;
+  cursor: pointer;
+}
+
+.movieDiv:hover {
+  box-shadow: 0px 0px 10px #585858;
+}
+
+.popularMovie {
+  position: absolute;
+  height: 65vh;
+  min-width: 100vw;
+  left: 0px;
+  transition: left 1s ease-in;
+}
+
+.personDiv > .imgDiv > .material-symbols-outlined {
+  font-size: 35px;
+}
+
+.personBox > .imgDiv > .material-symbols-outlined {
+  font-size: 32px;
+  position: relative;
+  left: 3px;
+}
+
+.imgDiv > .material-symbols-outlined:hover {
+  cursor: pointer;
+}
+
+.personBox > .imgDiv {
+  height: 60px;
+  min-width: 60px;
+  margin-left: 7px;
+  margin-right: 7px;
+}

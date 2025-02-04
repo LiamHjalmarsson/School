@@ -1,0 +1,61 @@
+#aboutWrapper {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: 100vw;
+  align-items: center;
+  position: fixed;
+  top: 0px;
+  bottom: 0px;
+  background-color: #151515;
+  z-index: 3;
+  overflow: scroll;
+  scrollbar-width: none;
+}
+
+#developerContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px 30px;
+  margin-top: 30px;
+}
+
+.developerDiv {
+  height: 130px;
+  width: 130px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.pictureDiv {
+  height: 70%;
+  width: 70%;
+  border-radius: 50%;
+}
+.nameDiv {
+  text-align: center;
+  font-family: mukta;
+}
+
+#titleDiv > h1 {
+  text-align: center;
+  font-family: mukta;
+  margin: 5px;
+  font-size: 25px;
+}
+
+#titleDiv {
+  margin-top: 50px;
+}
+
+#infoAboutBox > p {
+  text-align: center;
+  margin: 30px 40px;
+  font-family: mukta;
+  line-height: 22px;
+}
+
+#infoAboutBox > p:last-child {
+  text-align: center;
+}
