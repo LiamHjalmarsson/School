@@ -1,0 +1,31 @@
+body {
+  margin: 0;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#wrapper {
+  width: 70%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+
+.colorDiv {
+  width: 75%;
+  height: 25vh;
+  transition: height .5s;
+}
+
+.colorDiv:hover {
+  border: 0px;
+}
+
+.reciving {
+  border: 1px solid black;
+  height: 0;
+}

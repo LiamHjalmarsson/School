@@ -1,0 +1,21 @@
+body {
+  margin: 0;
+}
+
+#wrapper {
+  padding: 20vw;
+}
+
+input {
+  padding: 1vw;
+  margin-bottom: 2vw;
+}
+
+#information {
+  border-radius: 1vw;
+  background-color: lightgrey;
+  padding: 1.5vw;
+}
+#information.not_found {
+  background-color: lightcoral;
+}

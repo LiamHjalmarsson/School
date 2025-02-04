@@ -1,0 +1,10 @@
+
+body {
+  height: 100vh;
+  margin: 0;
+  transition-property: background-color;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

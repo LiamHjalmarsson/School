@@ -1,0 +1,18 @@
+body {
+  margin: 0;
+}
+
+#wrapper {
+  padding: 20vh;
+}
+
+input {
+  padding: 2vh;
+  margin-bottom: 2vh;
+}
+
+#wrapper > div {
+  border-radius: 1vh;
+  background-color: lightgrey;
+  padding: 2.5vh;
+}

@@ -1,0 +1,20 @@
+body {
+  margin: 0;
+}
+
+#wrapper {
+  height: 100vh;
+  display: flex;
+  gap: 10vw;
+  justify-content: center;
+  align-items: center;
+}
+
+#wrapper > div {
+  background-color: transparent;
+  flex-basis: 0;
+  height: 0;
+  
+  transition-property: background-color, flex-basis, height;
+  transition-duration: 1s;
+}

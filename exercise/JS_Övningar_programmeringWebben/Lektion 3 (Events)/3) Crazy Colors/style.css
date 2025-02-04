@@ -1,0 +1,36 @@
+
+* {
+  transition: background-color ease-in-out 1s, color ease-in-out 1s;
+}
+
+body {
+  margin: 40px;
+  font-family: "Fira Sans";
+}
+
+#choices {
+  display: flex;
+}
+
+#choices div {
+  padding: 10px;
+  margin-right: 20px;
+
+  border: 1px solid grey;
+  border-radius: 10px;
+}
+
+#choices div:hover {
+  cursor: pointer;
+  box-shadow: 0px 0px 10px black;
+}
+
+#choices div.selected {
+  background-color: black;
+  color: white;
+}
+
+
+.quote {
+  margin-left: 30px;
+}

@@ -1,0 +1,28 @@
+body {
+  margin: 0;
+}
+
+#wrapper {
+  padding: 20vw;
+}
+
+input {
+  padding: 1vw;
+  margin-bottom: 2vw;
+}
+
+#users {
+  border-radius: 1vw;
+  background-color: lightgrey;
+  padding: 1.5vw;
+
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+#users > div {
+  border-radius: 5px;
+  padding: 2px;
+  background-color: antiquewhite;
+}

@@ -1,0 +1,56 @@
+body {
+  margin: 0;
+  height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  gap: 1vh;
+}
+
+main {
+  width: 90vw;
+  display: flex;
+}
+
+.folder {
+  flex-basis: 0;
+  flex-grow: 1;
+
+  max-width: 700px;
+  padding: 2vh;
+  margin: 5vh;
+  background-color: rgb(140, 156, 155);
+
+  display: flex;
+  flex-direction: column;
+  gap: 1vh;
+}
+
+.msgBox {
+  padding: 10px;
+  flex-grow: 1;
+  overflow-y: scroll;
+  background-color: rgba(105, 178, 180, 0.2);
+}
+
+.message {
+  border-radius: 5px;
+  background-color: rgba(0,0,0,.2);
+  border-radius: 1vh;
+  padding: 1vh;
+  margin: 1vh;
+  color: #eee;
+}
+
+.msgInfo {
+  display: flex;
+}
+
+.msgInfo > p {
+  text-align: center;
+  flex-basis: 0;
+  flex-grow: 1;
+  background-color: rgba(0,0,0,.07);
+  padding: .5vh;
+  margin: .5vh 0;
+}

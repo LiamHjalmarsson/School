@@ -1,0 +1,36 @@
+
+body {
+  height: 100vh;
+  margin: 0;
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;  
+
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 5vh;
+}
+
+#container {
+  flex-basis: 50vh;
+  height: 50vh;
+
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+}
+
+#container div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#container div:hover {
+  cursor: pointer;
+  background-color: grey;
+}
+
+#container div:active {
+  background-color: black;
+}

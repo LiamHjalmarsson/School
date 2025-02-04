@@ -1,0 +1,23 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+#wrapper {
+  padding: 10px;
+  display: grid;
+  gap: 10px;
+  grid-template-columns: repeat(11, 1fr);
+  grid-template-rows: repeat(11, 1fr);
+  height: 100vh;
+}
+
+#wrapper > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#button_start {
+  grid-area: 6 / 6;
+}

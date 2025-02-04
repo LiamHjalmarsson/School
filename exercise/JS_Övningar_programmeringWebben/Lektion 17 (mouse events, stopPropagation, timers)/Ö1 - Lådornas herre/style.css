@@ -1,0 +1,27 @@
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#info {
+    font-size: 21px;
+    font-family: Courier, monospace;
+}
+
+#boxes {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-gap: 15px;
+    height: 10vh;
+    width: 60vh;
+}
+
+#boxes div {
+    cursor: pointer;
+    background-color: gray; 
+    box-shadow: 5px 5px 0 black;
+}

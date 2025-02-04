@@ -1,0 +1,29 @@
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#info {
+    width: 20vw;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Courier, monospace;
+    background-color: blue;
+    box-shadow: 5px 5px 0 gray;
+    color: white;
+}
+
+#warning {
+    margin: 0;
+    font-size: 24px;
+    font-family: Courier, monospace;
+    letter-spacing: 2px;
+    color: red;
+    text-shadow: 1px 1px 0 orange;
+}

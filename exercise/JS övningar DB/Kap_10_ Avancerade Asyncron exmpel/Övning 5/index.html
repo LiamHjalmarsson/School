@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="shortcut icon" type="image/png" href="./favicon.ico"/>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="./index.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nabla&display=swap" rel="stylesheet"> 
+  <title>Many Parallell Requests</title>
+</head>
+<body>
+
+  <div id="wrapper">
+  </div>
+
+  <div id="info">
+    <div>Divs with one request: &nbsp<span id="done_divs_one">0</span></div>
+    <div>Divs with more than one request: &nbsp<span id="done_divs_more">0</span>. We needed &nbsp<span id="requests_sent">0</span> requests
+         to fill them, for an average of &nbsp<span id="average">0</span> per div.
+    </div>
+  </div>
+  
+  <script src="./index.js"></script>
+  
+</body>
+</html>

@@ -1,0 +1,15 @@
+body {
+  margin: 0;
+}
+
+#wrapper {
+  margin: 20vh auto;
+  display: flex;
+  flex-direction: column;
+  gap: 2vh;
+  width: 50vw;
+}
+
+#wrapper > * {
+  padding: 2vh;
+}

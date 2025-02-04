@@ -1,0 +1,14 @@
+body {
+  margin: 0;
+}
+
+#wrapper {
+  height: 100vh;
+  display: grid;
+}
+
+#wrapper > div {
+  background-color: transparent;
+  transition-property: background-color;
+  transition-duration: 1s;
+}

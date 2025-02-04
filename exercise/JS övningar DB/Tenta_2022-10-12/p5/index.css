@@ -1,0 +1,18 @@
+body {
+  margin: 0;
+}
+
+#wrapper {
+  box-sizing: border-box;
+  padding: 20vh 10vw;
+  height: 100vh;
+
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  grid-template-rows: repeat(10, 1fr);
+  gap: 1px;
+}
+
+#wrapper > div {
+  background-color: lightgrey;
+}

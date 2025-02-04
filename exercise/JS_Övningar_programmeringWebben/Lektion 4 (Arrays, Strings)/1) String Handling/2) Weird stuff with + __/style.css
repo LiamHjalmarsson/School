@@ -1,0 +1,24 @@
+
+
+.weekContainer {
+  display: flex;
+  padding: 3px;
+  margin: 2px;
+  background-color: antiquewhite;
+}
+
+.weekMark {
+  display: flex;
+  align-items: center;
+  padding: 0px 10px;
+}
+
+.weekDays {
+  flex-grow: 1;
+}
+
+
+.weekDays div {
+  border: 1px solid grey;
+  padding: 3px;
+}

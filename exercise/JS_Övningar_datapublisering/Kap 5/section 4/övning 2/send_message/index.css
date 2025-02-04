@@ -1,0 +1,28 @@
+body {
+  margin: 0;
+  height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1vh;
+}
+
+nav {
+  display: flex;
+  align-items: baseline;
+  gap: 2vw;
+}
+
+nav input[name='content'] {
+  width: 30vw;
+}
+
+.error {
+  padding: 10px;
+  background-color: lightcoral;
+}
+
+nav.feedback::before { content: "( "; }
+
+nav.feedback::after { content: " )"; }

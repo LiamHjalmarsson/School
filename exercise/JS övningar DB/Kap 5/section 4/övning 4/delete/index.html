@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="style.css">
+  <title>Document</title>
+
+</head>
+<body>
+
+  <nav id="send_form">
+
+    <div>
+      <label for="receiver">TO:</label>
+      <input name="receiver" type="text" id="receiver">
+    </div>
+
+    <div>
+      <label for="content">MESSAGE:</label>
+      <input name="content" type="text" id="content">
+    </div>
+
+    <button id="sendBtn">SEND</button>
+
+    <div class="feedback"> Status </div>
+
+  </nav>
+
+  <main>
+
+    <div id="recived" class="folder">
+      <h3> Messages to me</h3>
+      <div class="msgBox"></div>
+    </div>
+
+    <div id="sended" class="folder">
+      <h3> Messages from me</h3>
+      <div class="msgBox"> </div>
+    </div>
+
+  </main>
+
+
+  <script src="sendMsg.js"></script>
+  <script src="delete.js"></script>
+  <script src="main.js"></script>
+  
+</body>
+</html>

@@ -1,0 +1,15 @@
+body {
+  margin: 0;
+}
+
+#wrapper {
+  display: grid;
+  grid-template-columns: repeat(11, 1fr);
+  grid-template-rows: repeat(11, 1fr);
+  height: 100vh;
+  gap: 1vh;
+}
+
+#button_start {
+  grid-area: 6 / 6;
+}

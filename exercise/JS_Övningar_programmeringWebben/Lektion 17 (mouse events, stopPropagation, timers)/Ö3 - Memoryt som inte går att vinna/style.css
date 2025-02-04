@@ -1,0 +1,16 @@
+body {
+    margin: 0;
+    height: 100vh;
+}
+
+.box {
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    background-color: gray;
+    transition: border-radius 0.2s, background-color 0.2s;
+}
+
+.box.circle {
+    border-radius: 50%;
+}
