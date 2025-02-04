@@ -1,0 +1,82 @@
+.searchBarcontainer {
+  position: absolute;
+  display: none;
+}
+
+.searchBarcontainer.active {
+  display: inline;
+}
+
+.searchBar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+}
+
+.searchfieldBox {
+  background-color: var(--lightColor);
+  display: flex;
+  width: 100%;
+  max-width: 900px;
+  border: 1px solid;
+  margin: 8px;
+}
+
+.iconSearch {
+  font-size: 20px;
+  margin-right: 5px;
+  margin-left: 3px;
+  padding: 8px;
+  cursor: pointer;
+}
+
+.iconCross {
+  cursor: pointer;
+  padding: 5px;
+  margin-right: 5px;
+  font-size: 25px;
+}
+
+#searchInputBar {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  background: none;
+  width: 100%;
+}
+
+.search-result {
+  font-size: 11pt;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 80vh;
+  overflow: scroll;
+  overflow-x: hidden;
+  max-width: 920px;
+  margin: auto;
+}
+
+.result-box {
+  background-color: #294255;
+  color: var(--almostWhiteColor);
+  padding: 10px;
+  margin: 0px 8px 8px 8px;
+}
+
+.result-box:hover {
+  background-color: var(--darkColor);
+}
+
+.titleInfoSearch {
+  margin: 5px 0px;
+}
+
+.textInfoSearch {
+  margin-bottom: 5px;
+}
+
+.starStudent {
+  color: var(--starColor);
+}

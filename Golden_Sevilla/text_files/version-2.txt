@@ -1,0 +1,11 @@
+Version 2
+
+- JS-filstruktur
+- Skapa JS-filer
+- Planera funktioner
+    * Vilka funktioner kommer vi att behöva?
+    * Vilka kan vi återanvända på fler ställen?
+    * Finns det grejer vi har tänkt göra som vi inte riktigt kan än?
+
+- Skapa funktioner
+- Implementera vår grafiska profil

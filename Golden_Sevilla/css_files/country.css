@@ -1,0 +1,80 @@
+:root {
+  --darkColor: #425664;
+  --cityDark: #344450d4;
+  --lightColor: #eaeaea;
+  --almostWhiteColor: #eaeaea;
+}
+
+body {
+  margin: 0;
+}
+
+#container {
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#top-img {
+  height: 40vh;
+  background-size: cover;
+  background-position: center;
+}
+
+.city-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.city-div {
+  max-width: 500px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: center;
+  background-size: cover;
+  background-position: center;
+}
+
+.city-info {
+  text-align: center;
+  background-color: var(--cityDark);
+  color: var(--almostWhiteColor);
+  padding: 15px;
+  margin: 30px;
+}
+
+.cityButton {
+  background-color: var(--lightColor);
+  color: var(--darkColor);
+  margin-top: 10px;
+  padding: 5px 20px;
+  border: none;
+  cursor: pointer;
+  font-family: 'IBM Plex Sans Condensed', sans-serif;
+  transition: background-color 300ms;
+}
+
+.cityButton:hover {
+  background-color: var(--darkColor);
+  color: var(--lightColor);
+}
+
+.country-info {
+  max-width: 1000px;
+  padding: 20px;
+  margin-bottom: 8px;
+  text-align: center;
+}
+
+.country-info > h2 {
+  text-align: center;
+}
+
+@media (max-width: 1050px) {
+  .city-div {
+    max-width: 1000px;
+  }
+}

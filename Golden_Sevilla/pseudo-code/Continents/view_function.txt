@@ -1,0 +1,55 @@
+check localStorage, set likedExists to true or false
+
+
+append buildTopMenu(false, likedExists) to body
+
+
+function continetsButtonsBar () 
+    createDiv containerButtons 
+    append containerButtons to body 
+
+    append buttonsMapVy(element) to containerButtons
+    append buttonListVy(element) to containerButtons
+
+    if (buttonsMapVy() == active) 
+        continentMap()
+    else if (buttonListVy() == active)
+        createContinentList()
+
+    return containerButtons
+
+
+function buttonsMapVy (element) 
+    createDiv element // parameter
+    add classMapVy to element 
+    add class parameterActive to element
+    element.innerHTML mapvy
+    element.addEventListener("click", function ()
+        changeClass()
+    ) 
+
+    return element
+
+
+function buttonListVy (element) 
+    createDiv element
+    add classListVy to element
+    element.innerHTML listVy
+        element.addEventListener("click", function ()
+        changeClass()
+    ) 
+
+    return element
+
+
+function changeClass (element)
+    querySelectorAll allbuttons 
+
+    loop fro allbuttons
+        if (button.contains("listVy"))
+            remove mapVy 
+        else if (button.contains("mapvy"))
+            remove listvy       
+
+
+continetsButtonsBar()

@@ -1,0 +1,17 @@
+.info-about-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.info-about-wrapper > p {
+  padding: 0px 5px;
+  max-width: 1000px;
+}
+
+img {
+  width: 100vw;
+  max-width: 1000px;
+  max-height: 450px;
+}

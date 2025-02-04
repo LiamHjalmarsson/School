@@ -1,0 +1,61 @@
+function buildTopMenu (liked)
+    createDiv menuHTML
+    append burgerHTML() to menuHTML
+    append logoHTML() to menuHTML
+    append searchHTML() to menuHTML
+    
+    if ( something in array likedArray)
+        append likedHTML() to menuHTML
+    else
+        append likeHTML() to menuHTML
+        
+    return menuHTML
+
+
+function burgerHTML()
+    createDiv _burgerHTML
+    innerHTML
+        icon link
+    _burgerHTML eventListner("click", burgerItemsHTML)
+    return _burgerHTML
+
+
+function logoHTML ()
+    createDiv _logoHTML
+    innerHTML
+        buttonTextTitle, URL_index
+    return _logoHTML
+ 
+
+function searchHTML()
+    createDiv _searchHTML
+    class search(img css)
+    serachBar()
+    _searchHTML eventListner("click", function())
+        serachBar().classList.Toggle("serachBar")
+        changeClass(_searchHTML)
+    
+    return _searchHTML
+
+
+function changeClass (element)
+    if (element class contains("close"){
+        remove class("Close")
+    } else add class("Close")
+
+
+function likeHTML()
+    createDiv _likeHTML
+    _likeHTML innerHTML
+        icon_emptyHeart
+    _likeHTML eventListner ("click", likedPrograms())
+    return _likeHTML
+
+
+function likedHTML()
+    createDiv _likedHTML
+    _likedHTML innerHTML
+        icon_filledHeart
+    _likedHTML eventListner ("click", likedPrograms())
+    return _likedHTML
+ 

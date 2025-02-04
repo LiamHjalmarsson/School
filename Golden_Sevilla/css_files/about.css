@@ -1,0 +1,37 @@
+.info-about-wrapper {
+  max-width: 1000px;
+  margin: auto;
+}
+
+.info-about-wrapper > h4 {
+  margin: 10px;
+  padding: 0px 5px;
+}
+
+.info-about-wrapper > p {
+  margin: 10px;
+  padding: 0px 5px;
+}
+
+#img-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  /* flex-direction: column; */
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.profile-img {
+  margin: 10px 50px;
+}
+
+.profile-img > img {
+  height: 250px;
+  border-radius: 100%;
+}
+
+.profile-img > p {
+  text-align: center;
+}
